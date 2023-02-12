@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Inside</title>
+
+        <!-- Tailwind Link Start -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind Link END -->
+
+        <!-- CSS and ICON Link Start -->
+        <!-- <link rel="stylesheet" href="Stye/banlStyle.css"> -->
+        <link rel="shortcut icon" href="MyAssets/ICO/My_Icon.ico"
+            type="image/x-icon">
+        <!-- CSS and ICON Link End -->
+    </head>
+    <body>
+
+        <!-- Header Start -->
+        <header>
+            <h1 class="text-xl text-center mt-6">Let's Get <span
+                    class="font-bold text-violet-600">some money</span>!!!</h1>
+        </header>
+        <!-- Header End -->
+
+        <!-- Main Start -->
+        <main>
+            <section class="mt-12">
+                <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white ">
+                    <div class="bg-green-400 p-8 rounded-xl">
+                        <h4 class="text-2xl">Deposit</h4>
+                        <h2  class="text-5xl">$<span id="maindeposit">00</span></h2>
+                    </div>
+                    <div class="bg-yellow-500 p-8 rounded-xl">
+                        <h4 class="text-2xl">Withdraw</h4>
+                        <h2 class="text-5xl">$ <span id="mainwithdraw" >00</span></h2>
+                    </div>
+                    <div class="bg-violet-400 p-8 rounded-xl">
+                        <h4 class="text-2xl">Balance</h4>
+                        <h2  class="text-5xl">$ <span id="mainbalance">1240</span></h2>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Deposit and Withdraw start -->
+            <section class="mt-12">
+                <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto  ">
+                    <div class="bg-fuchsia-400 p-8 rounded-xl">
+                        <h4 class="text-2xl mb-2 text-white">Please Deposit</h4>
+
+                        <input class="w-9/12 block mb-3 px-3" type="email" name="" id="depositinput" placeholder="$ Amount You want to deposit">
+                      
+                        <button id="btndeposit" class="bg-amber-600 px-8 py-2
+                            text-white font-medium rounded-lg hover:bg-sky-700">Deposit</button>
+                    </div>
+                    <div class="bg-sky-400 p-8 rounded-xl">
+                        <h4 class="text-2xl mb-2 text-white">Please Withdraw</h4>
+                        <input class="w-9/12 block mb-3 px-3" type="email" name="" id="withdrawinput" placeholder="$ Amount You want to Withdraw">
+                      
+                        <button id="btnwithdraw" class="bg-amber-600 px-8 py-2
+                            text-white font-medium rounded-lg hover:bg-sky-700">Withdraw</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Deposit and Withdraw end -->
+        </main>
+        <!-- Main End -->
+
+
+        <script src="JS/bankdev.js"></script>
+    </body>
+</html>
