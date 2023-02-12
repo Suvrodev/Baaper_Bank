@@ -1,0 +1,30 @@
+/* .header{
+    overflow: hidden;
+} */
+/* .HeaderTitle{
+   
+} */
+.Start{
+    background-color: rgb(110, 188, 224);
+    color: white;
+    padding: 10px 2px;
+    font-weight: 700;
+    border-radius: 7px;
+    box-shadow: 0px 0px 55px rgb(160, 153, 153);
+}
+.input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputclass{
+    padding: 5px 5px;
+    border-radius: 5px;
+    outline: 0;
+}
+.UserButton{
+    display: flex;
+    gap: 45px;
+    margin-top: 10px;
+}

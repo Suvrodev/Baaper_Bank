@@ -1,0 +1,88 @@
+@import "indexStyle.css";
+
+/* Logout Section start */
+.Logout_{
+    background-color: black;
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+.logout_title{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.logoutinput{
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    outline: none;
+}
+.logoutbutton{
+    background-color: skyblue;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/* Logout Section end */
+
+/* Comment Section start */
+.CommentContainer{
+    background-color: rgb(185, 108, 80);
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+    height: 450px;
+    overflow: auto;
+}
+.Title{
+    background-color: green;
+    padding: 10px 5px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+}
+.WriteComment{
+    margin-left: 20px;
+    width: 320px;
+}
+.commentclass{
+    margin: 2px 0px;
+    background-color: lightseagreen;
+    padding: 10px;
+    border-radius: 5px;
+}
+.docommentclass{
+    border-radius: 10px;
+    resize: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: 700;
+    outline: none;
+    background-color: teal;
+    color: white;
+}
+.CommentBtn{
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+.btn{
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+/* Comment Section end */
+
+

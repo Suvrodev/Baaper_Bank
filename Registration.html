@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+
+    <!-- Add Css start -->
+    <link rel="stylesheet" href="Stye/registration.css">
+    <link rel="shortcut icon" href="MyAssets/ICO/My_Icon.ico" type="image/x-icon">
+    <!-- Add Css end -->
+</head>
+<body>
+    
+    <div class="Reg_Form">
+        <h2 class="Title">Registration Form</h2>
+         <div class="RegContent">
+            <div class="Name">
+                <label for="" class="">Enter your Name <br>
+                    <input type="text" name="" id="nameid" class="inputclass ud w4" placeholder="Enter Your Name" required>
+                </label>
+                <label for="" class="">Enter Your Title <br>
+                    <input type="text" name="" id="surenameid" class="inputclass ud w4" placeholder="Enter  Sure Name" required> <br>
+                </label>
+             </div> <br>
+            <label for="" class="label_">Enter Email: <br>
+                <input type="email" name="" id="emailid" class="inputclass ud em" placeholder="Enter Your Email" required> <br>
+            </label> <br>
+
+            <label for="" class="label_">Password <br> 
+                <input type="password" name="" id="passid" class="inputclass ud em mrgn" placeholder="Enter Your Password" required>
+            </label> <br> 
+            <p id="passwordtextid" style="color:yellow">Password Length should be more than 6 word</p>
+
+            <label for="" class="label_">Confirm Password <br>
+                <input type="password" name="" id="cpassid" class="inputclass ud em" placeholder="Retype Password" required>
+            </label> 
+            <p id="cpasswordtextid" style="color:red">Password Not Matched</p>
+
+            <div class="RegButton">
+                <button class="btn Green" id="submitid">Submit</button>
+                <button class="btn Red" id="resetid">Reset</button>
+            </div>
+         </div>
+    </div>
+
+   
+
+    <script src="JS/utilities.js"></script>
+    <script src="JS/Registration_dev.js"></script>
+</body>
+</html>

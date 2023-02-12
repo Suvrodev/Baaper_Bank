@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Inside</title>
 
+        <!-- Font Awesome Link Start -->
+        <script src="https://kit.fontawesome.com/c94050bf12.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome Link End -->
         <!-- Tailwind Link Start -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Tailwind Link END -->
 
         <!-- CSS and ICON Link Start -->
-        <!-- <link rel="stylesheet" href="Stye/banlStyle.css"> -->
+        <link rel="stylesheet" href="Stye/bank.css">
         <link rel="shortcut icon" href="MyAssets/ICO/My_Icon.ico"
             type="image/x-icon">
         <!-- CSS and ICON Link End -->
@@ -66,6 +69,38 @@
                 </div>
             </section>
             <!-- Deposit and Withdraw end -->
+
+            <!-- Comment Section start -->
+            <section class="Comment">
+                <div class="CommentContainer">
+                    <h2 class="Title">Show Comment</h2>
+                    <div class="UserComment" id="allusercomment">
+                        <p id="comment_p" class="commentclass"><i class="fa-solid fa-xmark" id="del"  style="background-color: red;"></i>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci nisi. Nesciunt possimus omnis autem a perferendis nisi. Ullam sunt officia magnam perferendis voluptate qui quos dolores vel maxime nobis.</p> 
+                        <p id="comment_p" class="commentclass"> <i class="fa-solid fa-xmark" id="del" style="background-color: red;"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci nisi. Nesciunt possimus omnis autem a perferendis nisi. Ullam sunt officia magnam perferendis voluptate qui quos dolores vel maxime nobis.</p> 
+                        <p id="comment_p" class="commentclass"><i class="fa-solid fa-xmark" id="del" style="background-color: red;"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci nisi. Nesciunt possimus omnis autem a perferendis nisi. Ullam sunt officia magnam perferendis voluptate qui quos dolores vel maxime nobis.</p> 
+                    </div>
+                </div>
+
+                <div class="WriteComment">
+                    <h2 style="font-weight: bolder;" class="Title">Write comment Here:</h2>
+                    <textarea name="" id="docomment" class="docommentclass" cols="30" rows="10"></textarea> <br>
+                    <div class="CommentBtn">
+                        <Button class="btn" style="background-color: red;" id="check1">Reset</Button>
+                        <Button class="btn" id="check2">Submit</Button>
+                    </div>
+                </div>
+            </section>
+            <!-- Comment Section end -->
+
+            <!-- Logout Section start -->
+            <section class="Logout">
+                <div class="Logout_">
+                    <p class="logout_title">Follow this instruction to <span style="color:red">Logout</span></p>
+                    <input type="text" name="" id="logoutinputid" class="logoutinput" placeholder="Write logout">
+                    <button class="logoutbutton" id="logoutbtnid" disabled>Logout</button>
+                </div>
+            </section>
+            <!-- Logout Section end -->
         </main>
         <!-- Main End -->
 

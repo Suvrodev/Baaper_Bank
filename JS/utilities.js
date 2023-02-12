@@ -1,5 +1,16 @@
 const myUtilities='variable Inside Utilities File';
+let GlobalEmail;
+let GlobalPassword;
 
+function MyGlobalEmail(email){
+    GlobalEmail=email;
+    return email;
+}
+
+function MyGlobalPassword(password){
+    GlobalPassword=password;
+    return password;
+}
 
 const MainDeposit = document.getElementById("maindeposit");
 const MainWithdraw = document.getElementById("mainwithdraw");

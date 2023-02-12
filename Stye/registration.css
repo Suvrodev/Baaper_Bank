@@ -1,0 +1,68 @@
+@import "indexStyle.css";
+body{
+    background-color: aliceblue;
+}
+.Reg_Form{
+    width: 750px;
+    background-color: rgb(198, 85, 233);
+    padding: 15px;
+    margin: 0 auto;
+}
+.Title{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.RegContent{
+    margin: 0 auto;
+    width: 600px;
+}
+.ud{
+    margin: 5px 0 5px 0;
+}
+.w4{
+    width: 250px;
+}
+.em{
+    width: 540px;
+}
+.Name{
+    display: flex;
+    gap: 25px;
+}
+.RegContent{
+    color: white;
+}
+.label_{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.mrgn{
+    margin-bottom: 20px;
+}
+.RegButton{
+    /* background-color: yellow; */
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 5px 15px;
+    border: 0;
+    color:white;
+    outline:  none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.Green{
+    background-color: green;
+}
+.Red{
+    background-color: red;
+}

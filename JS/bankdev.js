@@ -1,6 +1,8 @@
 console.log("Deposit");
 console.log(myUtilities);
 
+
+///Deposit Button start
 DepostButton.addEventListener("click", function () {
     const inputValue=getInputValueByID('depositinput');
     console.log(inputValue);
@@ -20,8 +22,9 @@ DepostButton.addEventListener("click", function () {
  ////Empty Input Field
   DepositInput.value = "";
 });
+///Deposit Button end
 
-/////Withdraw Button Work
+/////Withdraw Button Work start
 WithdrawButton.addEventListener("click", function () {
     const inputValue=getInputValueByID('withdrawinput');
     if(isNaN(inputValue)){
@@ -38,3 +41,72 @@ WithdrawButton.addEventListener("click", function () {
   ////Empty Input Field
   WithdrawInput.value = "";
 });
+/////Withdraw Button Work end
+
+/////Comment Start
+const CommentReset=document.getElementById('check1');
+const CommentSubmit=document.getElementById('check2');
+const CommentText=document.getElementById('docomment');
+let userComment;
+
+CommentText.addEventListener('keyup',function(event){
+    userComment=event.target.value;
+})
+
+CommentReset.addEventListener('click',function(){
+    CommentText.value="";
+   /// console.log("Button: "+CommentReset.style.backgroundColor)///////////////////////////jioooooooooooooooooooooooooooo
+})
+
+CommentSubmit.addEventListener('click',function(){
+   console.log(userComment);
+   const p_comment=document.createElement('p');
+   p_comment.innerText=userComment;
+
+   const CommentContainer=document.getElementById('allusercomment');
+   p_comment.classList.add('commentclass');
+   CommentContainer.appendChild(p_comment);
+
+   ////
+   document.getElementById('docomment').value=""; 
+   
+})
+/////Comment End
+
+
+////Remove Comment start
+// This is Okay start
+// document.getElementById('allusercomment').addEventListener('click',function(event){
+//     event.target.parentNode.removeChild(event.target);
+  
+// })
+// This is Okay end
+
+///যে রকম চাচ্ছি সেরকম হচ্ছে না
+const baal= document.getElementsByClassName('commentclass');
+for( const x of baal ){
+    x.addEventListener('click',function(event){
+        console.log(event.target.parentNode);
+        event.target.parentNode.removeChild(event.target)
+    
+    })
+}
+////Remove Comment end
+
+
+
+///Logout Button start
+const LogoutInput=document.getElementById('logoutinputid');
+const LogoutButton=document.getElementById('logoutbtnid');
+LogoutInput.addEventListener('keyup',function(event){
+    const Text=event.target.value;
+    console.log(Text);
+    if(Text==='logout'){
+        LogoutButton.removeAttribute('disabled')
+        LogoutButton.style.backgroundColor='blue';
+    }else{
+        LogoutButton.setAttribute('disabled',true);
+        LogoutButton.style.backgroundColor='skyblue'
+    }
+})
+///Logout Button end
