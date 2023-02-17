@@ -28,3 +28,12 @@
     gap: 45px;
     margin-top: 10px;
 }
+
+/* Media Query Start */
+@media only screen and (max-width:576px) {
+    .UserButton{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Media Query end */

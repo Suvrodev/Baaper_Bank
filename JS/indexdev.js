@@ -19,13 +19,21 @@ LoginButton_Button.addEventListener('mouseleave',function(){
     LoginButton_Button.style.visibility='visible';
 })
 
+
+////////
+let ge=sessionStorage.getItem("ek");
+let gp=sessionStorage.getItem('pk');
+
+
 LoginButton_Button.addEventListener('click',function(){
+   
+   // alert("Email: "+ge+"Password: "+gp);
     //console.log('Check Button');
     const Email=User_Email.value;
     const Password=User_Password.value;
 
     console.log("Email: "+Email+" Password: "+Password);
-    if(Email==='suvrodev.cse@yahoo.com' && Password==='12345'){
+    if(Email===ge && Password===gp){
         console.log('valid');
         window.location.href='Bank.html';
     }else{
@@ -37,3 +45,6 @@ LoginButton_Button.addEventListener('click',function(){
 Registration_Button.addEventListener('click',function(){
     window.location.href='Registration.html';
 })
+
+
+

@@ -49,5 +49,12 @@ Submit.addEventListener('click',function(){
     const Get1=MyGlobalEmail(Email.value);
     const Get2=MyGlobalPassword(UserPassword);
     console.log("Global Email: "+Get1+" Global Password: "+Get2);
+    
+    //////////////
+   // var aa="Thus is My Data";
+    sessionStorage.setItem("ek",Get1);
+    sessionStorage.setItem("pk",Get2);
+  //  alert("Email: "+Get1+"Password: "+Get2);
+    /////////////////
     window.location.href='index.html';
 })
