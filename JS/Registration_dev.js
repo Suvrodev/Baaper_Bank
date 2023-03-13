@@ -67,6 +67,9 @@ Submit.addEventListener('click',function(){
    // var aa="Thus is My Data";
     sessionStorage.setItem("ek",Get1);
     sessionStorage.setItem("pk",Get2);
+
+    localStorage.setItem('BB_Emai',Get1);
+    localStorage.setItem('BB_Password',Get2);
     alert('Registration successfully')
   //  alert("Email: "+Get1+"Password: "+Get2);
     /////////////////

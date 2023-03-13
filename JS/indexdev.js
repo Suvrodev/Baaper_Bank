@@ -1,3 +1,6 @@
+let Receive_Email_LS=localStorage.getItem('BB_Emai');
+let Receive_Password_LS=localStorage.getItem('BB_Password');
+
 const LoginButton_Button=document.getElementById('btnsubmit');
 const Registration_Button=document.getElementById('btnregistration');
 
@@ -34,10 +37,14 @@ LoginButton_Button.addEventListener('click',function(){
 
     console.log("Email: "+Email+" Password: "+Password);
     if(Email===ge && Password===gp){
-        console.log('valid');
+        alert('valid from session storage');
+        window.location.href='Bank.html';
+    }
+    else if(Email===Receive_Email_LS && Password===Receive_Password_LS){
+        alert('valid from local storage');
         window.location.href='Bank.html';
     }else{
-       alert("Invalid Email or Password");
+        alert("Invalid Email or Password");
     }
     //console.log("Global Email: "+GlobalEmail+" Global Password: "+GlobalPassword);
 })

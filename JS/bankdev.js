@@ -123,6 +123,9 @@ LogoutInput.addEventListener("keyup", function (event) {
 });
 
 LogoutButton.addEventListener('click',function(){
+    localStorage.removeItem('BB_Emai');
+    localStorage.removeItem('BB_Password');
+
     window.location.href='index.html';
 })
 ///Logout Button end
