@@ -106,11 +106,11 @@ const submitcomment=()=>{
       
 
         try{
-        li_comment.innerHTML=`
-          <button onclick="dlt('${Text}')"><i class="bi bi-archive-fill redcolor"></i></button>  <button onclick="ShowText('${Text}')"><i class="bi bi-eye-fill greencolor"></i></button>  ${Text}
-        `;
-        }catch(err){
-          console.log('Error: '+err)
+          li_comment.innerHTML=`
+            <button onclick="dlt('${Text}')"><i class="bi bi-archive-fill redcolor"></i></button>  <button onclick="ShowText('${Text}')"><i class="bi bi-eye-fill greencolor"></i></button>  ${Text}
+          `;
+          }catch(err){
+            console.log('Error: '+err)
         }
         li_comment.classList.add('commentclass')
 
@@ -122,12 +122,12 @@ const submitcomment=()=>{
       }
 }
 
-CommentText.addEventListener("keyup", function (event) {
+CommentText.addEventListener("keypress", function (event) {
   userComment = event.target.value;
- // console.log(userComment)
+  console.log(userComment)
 
   if(event.key == 'Enter'){
-  // console.log('This is okay');
+  //  console.log('This is okay');
    submitcomment();
   }
 });
