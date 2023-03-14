@@ -86,3 +86,21 @@
 /* Comment Section end */
 
 
+/* Media Query Start */
+@media only screen and (max-width: 576px) {
+    .CommentContainer{
+        margin: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .docommentclass{
+        width: 90%;
+    }
+    .Logout_{
+        width: 90%;
+    }
+}
+/* Media Query End */
+
+
