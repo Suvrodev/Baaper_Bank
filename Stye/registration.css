@@ -66,3 +66,27 @@ body{
 .Red{
     background-color: red;
 }
+
+/*Media Query Start*/
+@media only screen and (max-width: 576px){
+    .Reg_Form{
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto ;
+    }
+    .Title{
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .RegContent{
+        width: 95%;
+    }
+    .Name{
+        flex-direction: column;
+    }
+    .em{
+        width: 90%;
+    }
+}
+/* Media Query End */

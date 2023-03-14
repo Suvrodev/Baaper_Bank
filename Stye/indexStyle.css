@@ -31,6 +31,9 @@
 
 /* Media Query Start */
 @media only screen and (max-width:576px) {
+    .maincontainer{
+        width: 90%;
+    }
     .UserButton{
         flex-direction: column;
         gap: 10px;
