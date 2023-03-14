@@ -83,6 +83,18 @@
     border-radius: 5px;
     color: white;
 }
+.redcolor{
+    background-color: white;
+    color: red;
+    padding: 3px;
+    border-radius: 5px;
+}
+.greencolor{
+    background-color: white;
+    color: green;
+    padding: 3px;
+    border-radius: 5px;
+}
 /* Comment Section end */
 
 

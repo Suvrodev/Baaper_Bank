@@ -9,6 +9,11 @@
         <!-- Font Awesome Link Start -->
         <script src="https://kit.fontawesome.com/c94050bf12.js" crossorigin="anonymous"></script>
         <!-- Font Awesome Link End -->
+
+        <!-- Bootstrap icon cdn Link start -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <!-- Bootstrap icon cdn Link end -->
+
         <!-- Tailwind Link Start -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Tailwind Link END -->
@@ -71,13 +76,15 @@
             <!-- Deposit and Withdraw end -->
 
             <!-- Comment Section start -->
+           
+
             <section class="Comment">
                 <div class="CommentContainer">
                     <h2 class="Title">Show Comment</h2>
                     <div class="UserComment" id="allusercomment">
-                        <p id="comment_p" class="commentclass"><i class="fa-solid fa-xmark" id="del"  style="background-color: red;"></i>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci nisi. Nesciunt possimus omnis autem a perferendis nisi. Ullam sunt officia magnam perferendis voluptate qui quos dolores vel maxime nobis.</p> 
-                        <p id="comment_p" class="commentclass"> <i class="fa-solid fa-xmark" id="del" style="background-color: red;"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci nisi. Nesciunt possimus omnis autem a perferendis nisi. Ullam sunt officia magnam perferendis voluptate qui quos dolores vel maxime nobis.</p> 
-                        <p id="comment_p" class="commentclass"><i class="fa-solid fa-xmark" id="del" style="background-color: red;"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci nisi. Nesciunt possimus omnis autem a perferendis nisi. Ullam sunt officia magnam perferendis voluptate qui quos dolores vel maxime nobis.</p> 
+                        <ol id="commentcontainernew">
+                            <li class="commentclass"> <button><i class="bi bi-archive-fill redcolor"></i></button> <button onclick="ShowText()" ><i class="bi bi-eye-fill greencolor" ></i></button>  This is built-in comment</li>
+                        </ol>
                     </div>
                 </div>
 
@@ -87,6 +94,7 @@
                     <div class="CommentBtn">
                         <Button class="btn" style="background-color: red;" id="check1">Reset</Button>
                         <Button class="btn" id="check2">Submit</Button>
+                        <button onclick="testshow()" class="bg-gray-400">Test</button>
                     </div>
                 </div>
             </section>

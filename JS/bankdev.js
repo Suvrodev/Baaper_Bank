@@ -58,53 +58,90 @@ const CommentSubmit = document.getElementById("check2");
 const CommentText = document.getElementById("docomment");
 let userComment;
 
-CommentText.addEventListener("keyup", function (event) {
-  userComment = event.target.value;
-});
+
 
 CommentReset.addEventListener("click", function () {
   CommentText.value = "";
   /// console.log("Button: "+CommentReset.style.backgroundColor)///////////////////////////jioooooooooooooooooooooooooooo
 });
 
-CommentSubmit.addEventListener("click", function () {
-    const Text=CommentText.value;
-    console.log(Text);
-  if (Text === "") {
-     alert("Write Comment First");
-  } else {
-    const p_comment = document.createElement("p");
-    p_comment.innerText = Text;
 
-    const CommentContainer = document.getElementById("allusercomment");
-    p_comment.classList.add("commentclass");
-    CommentContainer.appendChild(p_comment);
+///Create Function start
+const ShowText=(Text)=>{
+  console.log('Show Text Function')
+  console.log('Test Button: '+Text)
+  alert(Text)
+}
+const dlt=(Text)=>{
+  console.log('Delete Function')
+  console.log('Delete: '+Text);
+}
+///Create Function end
 
-    ////
-    document.getElementById("docomment").value = "";
+
+const submitcomment=()=>{
+       console.log('It is in Submit comment function')
+        const Text=CommentText.value;
+        console.log("In Submit Comment: "+Text);
+      if (Text === "") {
+        alert("Write Comment First");
+      } else {
+        const li_comment = document.createElement("li");
+        const Delete_Button=document.createElement('button');
+        const Convert_Button=document.createElement('button');
+
+      // Delete_Button.innerText='DB'
+        Delete_Button.classList.add('bi')
+        Delete_Button.classList.add('bi-archive-fill')
+        Delete_Button.classList.add('redcolor')
+
+        Convert_Button.classList.add('bi')
+        Convert_Button.classList.add('bi-eye-fill')
+        Convert_Button.classList.add('greencolor')
+
+        // li_comment.classList.add('commentclass');
+        // li_comment.appendChild(Delete_Button);
+        // li_comment.appendChild(Convert_Button);
+        // li_comment.innerText=Text;
+      
+
+        try{
+        li_comment.innerHTML=`
+          <button onclick="dlt('${Text}')"><i class="bi bi-archive-fill redcolor"></i></button>  <button onclick="ShowText('${Text}')"><i class="bi bi-eye-fill greencolor"></i></button>  ${Text}
+        `;
+        }catch(err){
+          console.log('Error: '+err)
+        }
+        li_comment.classList.add('commentclass')
+
+        const CommentContainer = document.getElementById("commentcontainernew");
+        CommentContainer.appendChild(li_comment);
+
+        ////
+        document.getElementById("docomment").value = "";
+      }
+}
+
+CommentText.addEventListener("keyup", function (event) {
+  userComment = event.target.value;
+ // console.log(userComment)
+
+  if(event.key == 'Enter'){
+  // console.log('This is okay');
+   submitcomment();
   }
 });
+
+CommentSubmit.addEventListener("click", ()=> {
+  submitcomment();
+});
+
+
+
 /////Comment End
 
-////Remove Comment start
-// This is Okay start
-document
-  .getElementById("allusercomment")
-  .addEventListener("click", function (event) {
-    event.target.parentNode.removeChild(event.target);
-  });
-// This is Okay end
 
-///যে রকম চাচ্ছি সেরকম হচ্ছে না
-// const baal= document.getElementsByClassName('commentclass');
-// for( const x of baal ){
-//     x.addEventListener('click',function(event){
-//         console.log(event.target.parentNode);
-//         event.target.parentNode.removeChild(event.target)
 
-//     })
-// }
-////Remove Comment end
 
 ///Logout Button start
 const LogoutInput = document.getElementById("logoutinputid");
@@ -129,3 +166,5 @@ LogoutButton.addEventListener('click',function(){
     window.location.href='index.html';
 })
 ///Logout Button end
+
+
